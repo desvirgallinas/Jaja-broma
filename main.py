@@ -4,6 +4,7 @@ import pyperclip
 from tkinter import *
 from tkinter import messagebox as MessageBox
 
+
 def isPrime(num):
     if num < 1:
         return False
@@ -14,6 +15,7 @@ def isPrime(num):
             if num % n == 0:
                 return False
         return True
+
 
 if __name__ == '__main__':
     time.sleep(3)
@@ -44,13 +46,14 @@ if __name__ == '__main__':
                 pyautogui.typewrite(word)
 
     elif opciones == 0:
-        eleccion = pyautogui.prompt(' [0] Contar\n [1] Espacios\n [2] Intos \n [3] Numeros primos\n [4] Donut\n [5] Putx')
+        eleccion = pyautogui.prompt(' [0] Contar\n [1] Espacios\n [2] Intos \n [3] Numeros primos\n [4] Donut\n [5] nada aun')
         eleccion = int(eleccion)
         time.sleep(2.5)
+
         if eleccion == 0:
             while i != 10000:
-                I = str(i)
-                pyautogui.typewrite(I)
+                A = str(i)
+                pyautogui.typewrite(A)
                 pyautogui.press('enter')
                 i = i + 1
 
@@ -84,8 +87,4 @@ if __name__ == '__main__':
                     pyautogui.press('enter')
 
         if eleccion == 5:
-            puto = 3
-            while puto <= 1000000:
-                pyautogui.press('n')
-                pyautogui.write("F")
-                pyautogui.hotkey('ctrl', 'Enter', interval=.1)
+            a = 0
